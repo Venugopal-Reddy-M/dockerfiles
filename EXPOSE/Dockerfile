@@ -1,4 +1,4 @@
 FROM almalinux:9
-RUN install nginx -y
+RUN dnf install nginx -y && dnf clean all
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
