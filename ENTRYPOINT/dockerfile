@@ -1,0 +1,5 @@
+## Entrypoint is used to provide the command executed by container when it is started.
+
+FROM almalinux:9
+CMD ["ping", "google.com"]
+ENTRYPOINT ["ping", "google.com"]
